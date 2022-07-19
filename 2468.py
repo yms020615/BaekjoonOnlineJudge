@@ -20,7 +20,7 @@ def dfs(y, x, h, visited):
             dfs(ny, nx, h, visited)
 
 ans = 0
-for h in range(1, 101):
+for h in range(max(map(max, graph))):
     count = 0
     visited = [[0 for _ in range(n)] for _ in range(n)]
 
