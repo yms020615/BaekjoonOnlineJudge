@@ -1,0 +1,5 @@
+s = set(int(input()) for _ in range(28))
+a = set(i for i in range(1, 31))
+b = sorted(list(a - s))
+print(b[0])
+print(b[1])
